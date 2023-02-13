@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Application\Web\DashboardController;
+use App\Http\Controllers\Application\Web\Tenant\TenantController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,4 +26,7 @@ Route::middleware('auth')->prefix('application')->name('application.')->group(fu
      
     //user route
     require_once(__DIR__ . '/web/application/user.php');
+
+    //tenant route
+    Route::resource('tenants', TenantController::class);
 });

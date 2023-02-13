@@ -6,6 +6,12 @@
     </a>
 </li>
 
+<li class="nav-item">
+    <a class="nav-link {{ ( !empty($active_page) && $active_page == 'tenants') ? 'active' : '' }}" href="{{ route('application.tenants.index') }}"> <i class="nav-icon fa fa-building"></i>
+        Cabang
+    </a>
+</li>
+
 @if( auth()->user()->hasAnyRole(['Admin','Super Admin']))
     <li class="nav-item {{ ( !empty($active_page) && $active_page == 'users') ? 'menu-open' : '' }}">
         <a href="#" class="nav-link {{ ( !empty($active_page) && $active_page == 'users') ? 'active' : '' }}"">

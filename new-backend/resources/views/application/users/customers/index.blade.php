@@ -101,7 +101,7 @@
         <br>
         <div class="card">
             <div class="card-body p-0">
-                <table class="table table-bordered center">
+                <table class="table table-bordered center" style="overflow-x: auto;">
                     <thead>
                         <tr>
                             <th style="width: 1%">
